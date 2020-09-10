@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+thead:nth-child(even) {
+  background-color: #dddddd;
+}
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30%;
+}
+</style>
+</head>
+<body>
+
+<h2>Your Potential Matches</h2>
+<table id="dashboard">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th> Age</th>
+        <th>Location</th>
+        <th>Gender</th>
+        <th>DirectChat</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td data-column="Name"></td>
+        <td data-column="Age"></td>
+        <td data-column="Location"></td>
+        <td data-column="gender"></td>
+        <td data-column=""><button class="btn"><a href="#" >chat</a></button></td>
+    </tr>
+    </tbody>
+</table>
+<script src="ViewPotential.js"></script>
+</body>
+</html>
